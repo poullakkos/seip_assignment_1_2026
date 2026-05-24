@@ -17,16 +17,18 @@ This project demonstrates a complete cloud-native deployment pipeline using Dock
 
 ## 📁 Repository Structure
 
+```text
 ├── server.js
 ├── Dockerfile
 ├── package.json
 ├── k8s/
-│ ├── configmap.yaml
-│ ├── secret.yaml
-│ ├── deployment.yaml
-│ └── service.yaml
+│   ├── configmap.yaml
+│   ├── secret.yaml
+│   ├── deployment.yaml
+│   └── service.yaml
 └── .github/workflows/
-  └── ci-cd.yaml
+    └── ci-cd.yaml
+```
 
 ---
 
@@ -101,16 +103,16 @@ Now open your browser:
 
 ## 📡 6. API Endpoints
 
-# 🏠 Root Endpoint
-`GET /`
+### 🏠 Root Endpoint
+`GET /`  
 Returns welcome message and environment info.
 
-# ❤️ Health Check
-`GET /health`
+### ❤️ Health Check
+`GET /health`  
 Used by Kubernetes liveness/readiness probes.
 
-# 🔐 Secure Config Check
-`GET /secure-config`
+### 🔐 Secure Config Check
+`GET /secure-config`  
 Validates that Secret injection is working correctly.
 
 ---
