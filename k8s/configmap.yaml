@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+data:
+  WELCOME_MESSAGE: "Welcome to the best configmap ever!"
+  NODE_ENV: "production"
