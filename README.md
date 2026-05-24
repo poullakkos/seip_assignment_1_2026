@@ -118,10 +118,10 @@ Validates that Secret injection is working correctly.
 ## 🔐 Configuration Injection
 
 This project uses:
-    * ConfigMap
-        * WELCOME_MESSAGE
-        * NODE_ENV
-    * Secret
-        * API_SECRET_KEY (base64 encoded)
+* ConfigMap
+    * WELCOME_MESSAGE
+    * NODE_ENV
+* Secret
+    * API_SECRET_KEY (base64 encoded)
 
 These values are injected into the container as environment variables.
